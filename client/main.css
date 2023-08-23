@@ -43,7 +43,7 @@ table {
 }
 
 .barcodes{
-  padding: 6mm 6mm 0 6mm;
+  /* padding: 6mm 6mm 0 6mm; */
   width: 210mm;
   height: 297mm;
   border: 10px solid black;
@@ -53,6 +53,7 @@ table {
 }
 .barcodes > img{
   width: 40mm;
+  /* width: calc(20% - 6px); */
   border-right: 1px solid #DDD;
   border-bottom: 1px solid #DDD;
 }
