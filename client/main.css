@@ -43,19 +43,23 @@ table {
 }
 
 .barcodes{
-  /* padding: 6mm 6mm 0 6mm; */
+  padding: 6mm 6mm 0 6mm;
   width: 210mm;
   height: 297mm;
   border: 10px solid black;
+  position: relative;
 }
 .barcodes h5{
   border-bottom: 1px solid #DDD;
 }
 .barcodes > img{
-  width: 40mm;
-  /* width: calc(20% - 6px); */
+  /* width: 40mm; */
+  width: calc(20% - 6px);
   border-right: 1px solid #DDD;
   border-bottom: 1px solid #DDD;
+}
+.barcodes > img:nth-of-type(5n+1){
+  border-left: 1px solid #DDD;
 }
 .barcodes .statiegeld > img{
   width: 16mm;
